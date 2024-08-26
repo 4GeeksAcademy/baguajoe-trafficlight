@@ -8,7 +8,7 @@ import "../styles/index.css";
 //import your own components
 
 
-import TrafficLight from "../component.app.js
+import TrafficLight from "./component/app.jsx";
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<TrafficLight/>);
+ReactDOM.createRoot(document.getElementById('app')).render(<TrafficLight />);
 

@@ -1,46 +1,45 @@
-/* Container for the entire traffic light */
 #trafficTop {
-    width: 100px;
-    margin: 0 auto;
-  }
+  width: 100px;
+  margin: 0 auto;
+}
+
+
+#container {
+  width: 80px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+}
+
+
+.light.red {
+  background-color: red;
+}
+
+.light.yellow {
+  background-color: yellow;
+}
+
+.light.green {
+  background-color: green;
+}
+
+
+.glow {
+  box-shadow: 0 0 30px 4px whitesmoke;
   
-  /* Main container holding the lights */
-  #container {
-    width: 80px;
-    padding: 10px;
-    background-color: black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  /* Base styles for each light */
-  .light {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: gray;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    transition: box-shadow 0.3s ease;
-  }
-  
-  /* Specific styles for the red, yellow, and green lights */
-  .light.red {
-    background-color: red;
-  }
-  
-  .light.yellow {
-    background-color: yellow;
-  }
-  
-  .light.green {
-    background-color: green;
-  }
-  
-  /* Glow effect applied to the selected light */
-  .glow {
-    box-shadow: 0 0 20px 10px currentColor;
-  }
-  
+}
